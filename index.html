@@ -108,7 +108,7 @@
         <option value="5 pcs">5 pcs</option>
         <option value="10 pcs">10 pcs</option>
       </select>
-      <textarea id="alamat" placeholder="kata-kata hari ini" required></textarea>
+      <textarea id="kata-kata" placeholder="kata-kata hari ini" required></textarea>
       <button type="submit">Pesan Sekarang via WhatsApp</button>
     </form>
 
@@ -121,12 +121,12 @@
 
       const nama = document.getElementById("nama").value;
       const paket = document.getElementById("paket").value;
-      const alamat = document.getElementById("alamat").value;
+      const kata = document.getElementById("kata").value;
 
-      const pesan = `Halo! Saya mau pesan kebab:%0A` +
+      const pesan = `Halo! saya mau pesan:%0A` +
                     `Nama: ${nama}%0A` +
                     `Paket: ${paket}%0A` +
-                    `pesan: ${pesan}`;
+                    `kata-kata hari ini: ${pesan}`;
 
       const waNumber = "6282286599654"; // ganti 0 dengan 62
       const waLink = `https://wa.me/${waNumber}?text=${pesan}`;
