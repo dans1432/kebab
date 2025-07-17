@@ -94,9 +94,9 @@
     
     <div class="harga">
       <ul>
-        <li>1 pcs: Rp10.000</li>
-        <li>5 pcs: Rp45.000</li>
-        <li>10 pcs: Rp80.000</li>
+        <li>paket biasa 3 pcs: Rp30.000</li>
+        <li>paket hemat 5 pcs: Rp45.000</li>
+        <li>paket super hemat 10 pcs: Rp85.000</li>
       </ul>
     </div>
 
@@ -104,15 +104,18 @@
       <input type="text" id="nama" placeholder="Nama lengkap" required>
       <select id="paket" required>
         <option value="">Pilih Paket</option>
-        <option value="1 pcs">1 pcs</option>
+        <option value="30 pcs">3 pcs</option>
         <option value="5 pcs">5 pcs</option>
         <option value="10 pcs">10 pcs</option>
       </select>
-      <textarea id="kata-kata" placeholder="kata-kata hari ini" required></textarea>
+      <textarea id="kata-kata" placeholder="alamat/catatan" required></textarea>
       <button type="submit">Pesan Sekarang via WhatsApp</button>
     </form>
+    <div class="wah">
+      info untuk teman-teman kebab, kami menyediakan promo setiap hari jum'at untuk setiap pembelian kebab mendapatkan bonus 1 pcs
+    </div>
 
-    <footer>&copy; 2025 Kebab Frozen Mini | Powered by GitHub Pages</footer>
+    <footer>&copy; 2025 Kebab Frozen Mini jalan lintas pasar pinggir depan sap variasi | Powered by GitHub Pages</footer>
   </div>
 
   <script>
@@ -128,7 +131,7 @@
                     `Paket: ${paket}%0A` +
                     `Alamat: ${alamat}`;
 
-      const waNumber = "6282286599654"; // ganti 0 dengan 62
+      const waNumber = "6282180764874"; // ganti 0 dengan 62
       const waLink = `https://wa.me/${waNumber}?text=${pesan}`;
       window.open(waLink, "_blank");
     });
